@@ -1,8 +1,8 @@
 # include <stdio.h>
 /**
-*main will print a word
+*main - Entry point
 *
-*reture 0 (success)
+*Return: Always 0 (success)
 */
 int main(void)
 {
