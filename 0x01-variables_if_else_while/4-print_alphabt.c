@@ -3,18 +3,20 @@
 /**
  * main - loop alphe
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
  */
 int main(void)
 {
 	char abc;
-	for (abc = 'a'; abc <= 'z'; abc++){
-		if (abc == 'e' || abc == 'q'){
+
+	for (abc = 'a'; abc <= 'z'; abc++)
+	{
+		if (abc == 'e' || abc == 'q')
+		{
 			continue;
 		}
 		putchar(abc);
-	}	
-	putchar('\n');	
-	
+	}
+	putchar('\n');
 	return (0);
-}	
+}

@@ -2,14 +2,17 @@
 /**
  * main - print low case alphe
  *
- * return : always 0 (success)
+ * Return : always 0 (success)
  */
 int main(void)
 {
-	char abc;
+	char abc[26]="abcdefghijklmnopqrstuvwxyz";
+	int i
 
-	for (abc = 'a'; abc <= 'z'; abc++)
-		putchar(abc);
-		putchar('\n');
+	for (i = 0; i < 26; i++)
+	{
+		putchar(abc[i]);
+	}
+	putchar('\n');
 	return (0);
 }

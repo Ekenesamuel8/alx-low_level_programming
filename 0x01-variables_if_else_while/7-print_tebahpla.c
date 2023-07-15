@@ -3,14 +3,16 @@
 /**
  * main - for loop
  *
- * return : always 0 (success)
+ * Return: always 0 (success)
  */
 int main(void)
 {
 	char abc;
-	for (abc = 'z'; abc >= 'a'; abc--){
+
+	for (abc = 'z'; abc >= 'a'; abc--)
+	{
 		putchar(abc);
 	}
 	putchar('\n');
 	return (0);
-}	
+}
