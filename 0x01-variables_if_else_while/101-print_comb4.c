@@ -2,25 +2,31 @@
 
 /**
  * main - for loop
- * 
- * return : always 0 (success)
- */     
+ *
+ * Return:always 0 (success)
+ */
 int main(void)
 {
-       	for (int num = 0; num < 8; num++){
-		 for (int num2 = num + 1; num2 < 9; num2++){
-		 	for (int num3 = num2 + 1; num3 < 10; num3++){
-			 putchar((num % 10) + '0');
-			 putchar((num2 % 10) + '0');
-			 putchar((num3 % 10) + '0');
-			 if (num == 7 && num2 == 8 && num3 == 9)
-				 continue;
-			 putchar(',');
-			 putchar('\t');
+	for (int num = 48; num < 58; num++)
+	{
+		for (int num2 = 49; num2 < 58; num2++)
+		{
+			for (int num3 = 50; num3 <= 58; num3++)
+			{
+				if (num3 > num2 && num2 > num)
+				{
+					 putchar(num);
+					 putchar(num2);
+					 putchar(num3);
+					if (num != 55 || num2 != 56)
+					{
+						putchar(',');
+						putchar('\t');
+					}
+				}
 			}
-		 }
-		 putchar('\n');
-	}	 
-			
-	 return (0);
+		}
+		putchar('\n');
+	}
+	return (0);
 }
