@@ -7,11 +7,14 @@
  */
 int main(void)
 {
-	for (int alphnum = 48; alphnum <= 57; alphnum++)
+	int alphnum;
+	char alphnums;
+
+	for (alphnum = 48; alphnum <= 57; alphnum++)
 	{
 		putchar(alphnum);
 	}
-	for (char alphnums = 'a'; alphnums <= 'f'; alphnums++)
+	for (alphnums = 'a'; alphnums <= 'f'; alphnums++)
 	{
 		putchar(alphnums);
 	}

@@ -7,11 +7,15 @@
  */
 int main(void)
 {
-	for (int num = 48; num < 58; num++)
+	int num;
+	int num2;
+	int num3;
+
+	for (num = 48; num < 58; num++)
 	{
-		for (int num2 = 49; num2 < 58; num2++)
+		for (num2 = 49; num2 < 58; num2++)
 		{
-			for (int num3 = 50; num3 <= 58; num3++)
+			for (num3 = 50; num3 <= 58; num3++)
 			{
 				if (num3 > num2 && num2 > num)
 				{

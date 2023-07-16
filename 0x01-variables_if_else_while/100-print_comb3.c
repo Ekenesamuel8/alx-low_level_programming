@@ -7,9 +7,12 @@
  */
 int main(void)
 {
-	for (int num = 48; num < 57; num++)
+	int num;
+	int num2;
+
+	for (num = 48; num < 57; num++)
 	{
-		for (int num2 = 49; num2 <= 57; num2++)
+		for (num2 = 49; num2 <= 57; num2++)
 		{
 			if (num2 > num)
 			{

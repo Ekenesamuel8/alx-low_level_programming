@@ -3,13 +3,16 @@
 /**
  * main - for loop
  *
- * return: always 0 (success)
+ * Return:always 0 (success)
  */
 int main(void)
 {
-	for (int num = 0; num < 100; num++)
+	int num;
+	int num2;
+
+	for (num = 0; num < 100; num++)
 	{
-		for (int num2 = 0; num < 100; num2++)
+		for (num2 = 0; num < 100; num2++)
 		{
 			if (num < num2)
 			{
@@ -24,10 +27,9 @@ int main(void)
 				}
 				putchar(',');
 				putchar('\t');
-				
 			}
-		}	
+		}
 	}
 	putchar('\n');
 	return (0);
-}	
+}
