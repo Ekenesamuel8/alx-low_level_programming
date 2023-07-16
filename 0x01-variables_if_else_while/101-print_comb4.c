@@ -25,7 +25,7 @@ int main(void)
 					if (num != 55 || num2 != 56)
 					{
 						putchar(',');
-						putchar('\t');
+						putchar(' ');
 					}
 				}
 			}
