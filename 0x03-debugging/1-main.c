@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int i;
+	int zoo;
 
 	printf("Infinite loop incoming :(\n");
-	i = 0;
+	zoo = 0;
 	/*while (i < 10)*/
 	/*{*/
 	/*putchar(i);*/
