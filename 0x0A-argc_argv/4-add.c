@@ -1,29 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
- *
- *
- *
+ * main -  program that adds positive numbers
+ * @argc: numbers of command line
+ * @argv: command line inputs
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
 {
-	int q, w;
+	int q, w, sum = 0;
 
-	if (argc )
+	for (q = 1; q < argc; q++)
 	{
-		printf("0\n");
+		for (w = 0; argv[q][w] != '\0'; w++)
+		{
+			if (!isdigit(argv[q][w]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[q]);
 	}
-	for (q = 1; q < argv[q]; q++)
-	{
-		printf("%d\n", )
-	if (argc != unsigned int)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	printf("%d\n", argc);
+	printf("%d\n", sum);
 	return (0);
-
-
 }
