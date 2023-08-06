@@ -12,9 +12,7 @@ int main(void)
 	for (abc = 'a'; abc <= 'z'; abc++)
 	{
 		if (abc == 'e' || abc == 'q')
-		{
 			continue;
-		}
 		putchar(abc);
 	}
 	putchar('\n');

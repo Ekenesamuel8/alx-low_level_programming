@@ -11,13 +11,13 @@ int main(void)
 	int num2;
 	int num3;
 
-	for (num = 48; num < 58; num++)
+	for (num = 48; num <= 57; num++)
 	{
-		for (num2 = 49; num2 < 58; num2++)
+		for (num2 = 48; num2 <= 57; num2++)
 		{
-			for (num3 = 50; num3 <= 58; num3++)
+			for (num3 = 48; num3 <= 57; num3++)
 			{
-				if (num3 > num2 && num2 > num)
+				if (num < num2 && num2 < num3)
 				{
 					 putchar(num);
 					 putchar(num2);

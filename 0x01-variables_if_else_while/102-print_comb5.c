@@ -12,15 +12,15 @@ int main(void)
 
 	for (num = 0; num < 100; num++)
 	{
-		for (num2 = 0; num < 100; num2++)
+		for (num2 = 1; num <= 100; num2++)
 		{
 			if (num < num2)
 			{
-				putchar((num / 10) + 48);
-				putchar((num % 10) + 48);
+				putchar((num / 10) + 0);
+				putchar((num % 10) + 0);
 				putchar('\t');
-				putchar((num2 / 10) + 48);
-				putchar((num2 % 10) + 48);
+				putchar((num2 / 10) + 0);
+				putchar((num2 % 10) + 0);
 				if (num == 98 && num2 == 99)
 				{
 					break;
