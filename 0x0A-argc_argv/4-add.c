@@ -8,17 +8,21 @@
 
 int main(int argc, char *argv[])
 {
-	int w = 0;
-//	int g = 0;
-	int q;
+	int q, w;
 
-	for (q = 0; q < argc; q++)
+	if (argc )
 	{
-		
-		w += q;
-		printf ("%d\n", w);
+		printf("0\n");
 	}
-
+	for (q = 1; q < argv[q]; q++)
+	{
+		printf("%d\n", )
+	if (argc != unsigned int)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	printf("%d\n", argc);
 	return (0);
 
 
