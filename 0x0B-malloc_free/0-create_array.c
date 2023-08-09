@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates an array of chars, and
@@ -7,7 +8,7 @@
  * @c: character
  * Return: array
  */
-i
+
 char *create_array(unsigned int size, char c)
 {
 	char *ary;
