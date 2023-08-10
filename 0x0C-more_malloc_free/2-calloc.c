@@ -2,13 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _calloc - function that allocates memory for an array, using malloc
- * @nmemb : number of input in array
- * @size: size of each input
- * Return: pointer
+ * *_memset - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
  *
+ * Return: pointer to the memory area s
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
