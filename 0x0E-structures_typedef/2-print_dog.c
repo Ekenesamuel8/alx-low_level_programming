@@ -3,10 +3,8 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ * print_dog - print a steuct
+ * @d: struct variable
  */
 void print_dog(struct dog *d)
 {
