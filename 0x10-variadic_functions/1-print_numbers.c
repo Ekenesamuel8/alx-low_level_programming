@@ -2,24 +2,26 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- *
- *
- *
+ * print_numbers - function that prints numbers, followed by a new line
+ * @separator: character
+ * @n: numbers
+ * Return: pointer
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list prt;
-	unsigned int o;
-	int e, ad = 0, dd = 0;
+	unsigned int o, ad;
 
-	va_start(prt, separator, n);
+	va_start(prt, n);
 
-	for (e = 0; separator[e] < '\0'; e++)
-		ad = e;
 	for (o = 0; o < n; o++)
-		separator[e + n] = ad;
-	dd = separator[e + n];
-	dd 
+	{
+		ad = va_arg(prt, const unsigned int);
+		printf("%d", ad);
 
-
-
+		if (n != (n - 1) && separator != NULL)
+			printf("%s", separator);
+	}
+	printf("\n");
+	va_end(prt);
+}
