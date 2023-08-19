@@ -11,11 +11,11 @@ void print_all(const char * const format, ...)
 {
 	int q, stat;
 	char *xtr;
-
 	va_list ram;
-	va_start(ram, format);
 
+	va_start(ram, format);
 	q = 0;
+
 	while (format != NULL && format[q] != '\0')
 	{
 		switch (format[q])
@@ -24,17 +24,14 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(ram, int));
 				stat = 0;
 				break;
-
 			case 'c':
 				printf("%c", va_arg(ram, int));
 				stat = 0;
 				break;
-
 			case 'f':
 				printf("%f", va_arg(ram, double));
 				stat = 0;
 				break;
-
 			case 's':
 				xtr = va_arg(ram, char *);
 				if (xtr == NULL)
@@ -42,7 +39,6 @@ void print_all(const char * const format, ...)
 				printf("%s", xtr);
 				stat = 0;
 				break;
-
 			default:
 				stat = 1;
 				break;
