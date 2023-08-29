@@ -19,9 +19,9 @@ int main(void)
 			{
 				if (num < num2 && num2 < num3)
 				{
-					 putchar(num);
-					 putchar(num2);
-					 putchar(num3);
+					putchar(num);
+					putchar(num2);
+					putchar(num3);
 					if (num != 55 || num2 != 56)
 					{
 						putchar(',');
