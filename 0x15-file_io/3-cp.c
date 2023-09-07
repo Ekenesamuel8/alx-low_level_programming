@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	red = 1024;
 	while (red == 1024)
 	{
-		red = read(openfrom, buff, red);
+		red = read(openfrom, buff, 1024);
 		if (red == -1)
 			errorprint(0, -1, argv);
 		ite = write(opento, buff, red);
