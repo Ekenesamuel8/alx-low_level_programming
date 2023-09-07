@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+* errorprint - printint out errors
+* @opento: print error from the destinatoion file
+* @openfrom: print error from the source file
+* @argv: arguments received
+*/
 void errorprint(int opento, int openfrom, char *argv[])
 {
 	if (opento == -1)
@@ -13,12 +18,18 @@ void errorprint(int opento, int openfrom, char *argv[])
 		exit(98);
 	}
 }
-
+/**
+* main - copy files
+* @argc: argument count
+* @argv: argument received
+* Return: 0 for success
+*/
 int main(int argc, char *argv[])
 {
 	int opento, openfrom, closefile;
 	ssize_t red, ite;
 	char buff[1024];
+
 	if (argc != 3)
 	{
 		dprintf(STDOUT_FILENO, "%s\n", "Usage: cp file_from file_to");
