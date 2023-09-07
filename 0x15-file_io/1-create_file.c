@@ -16,11 +16,11 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content == NULL)
 		text_content = "";
-	for (run = 0; run[text_content] != '\0'; run++)
+	for (run = 0; run[text_content]; run++)
+		;
 	wite = write(my, text_content, run);
 	if (wite == -1)
 		return (-1);
 	close(my);
 	return (1);
-
 }
