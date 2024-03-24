@@ -10,7 +10,7 @@ $(NAME): $(OBJ)
 all: $(NAME)
 
 clean:
-	$(RE) $(NAME)
+	$(RE) *~ $(NAME)
 
 oclean:
 	$(RE) $(OBJ)
