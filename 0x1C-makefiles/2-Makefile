@@ -3,7 +3,7 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-school: $(OBJ)
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-all: school
+all: $(NAME)
